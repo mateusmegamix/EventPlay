@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/item_eventos"
+        android:orderInCategory="100"
+        android:title="Meus Eventos"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/item_contato"
+        android:orderInCategory="200"
+        android:title="Contato"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_ajuda"
+        android:orderInCategory="300"
+        android:title="Ajuda"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/item_sair"
+        android:orderInCategory="400"
+        android:title="@string/exit"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/item_map"
+        android:orderInCategory="500"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_public"
+        android:title="@string/maps" />
+
+    <item android:id="@+id/item_favoritos"
+        android:orderInCategory="600"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_star_border"
+        android:title="@string/fav" />
+
+</menu>

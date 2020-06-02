@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetalhesProduto">
+
+
+    <include
+        android:id="@+id/toolbarPrincipal"
+        layout="@layout/activity_toolbar" />
+
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:layout_margin="8dp"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonChegar"
+            android:layout_width="144dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/botao_radius"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:text="Como Chegar"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnMensagem"
+            android:layout_width="39dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/botao_radius"
+            android:drawableBottom="@drawable/iconcomentario"
+            android:drawingCacheQuality="high"
+            android:paddingBottom="4dp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textCategoriaDetalhe"
+            android:layout_width="142dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:gravity="end"
+            android:paddingRight="16dp"
+            android:text="Categoria"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="4dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textTituloDetalhe"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="Titulo"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textTipoDetalhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:paddingLeft="20dp"
+        android:text="Tipo"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="16sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="4dp"
+        android:background="@color/cinza" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_margin="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="81dp"
+            android:layout_height="35dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="left|end"
+            android:text="Hora:"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textHoraDetalhe"
+            android:layout_width="87dp"
+            android:layout_height="35dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="Hora"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Data:"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textDataDetalhe"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="Data"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textDescricaoDetalhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Descricao"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20sp" />
+    </ScrollView>
+
+</LinearLayout>

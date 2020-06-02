@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapp="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="0dp"
+        tools:context=".Activity.Login">
+
+        <include
+            android:id="@+id/toolbarGenerica"
+            layout="@layout/toolbar_generica" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="690dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp">
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="270dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="64dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                aapp:layout_constraintEnd_toEndOf="parent"
+                aapp:layout_constraintHorizontal_bias="0.496"
+                aapp:layout_constraintStart_toStartOf="parent"
+                aapp:layout_constraintTop_toBottomOf="@+id/imageLogo"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/txtSenha"
+                android:layout_width="270dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="@string/senha"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                aapp:layout_constraintEnd_toEndOf="parent"
+                aapp:layout_constraintHorizontal_bias="0.496"
+                aapp:layout_constraintStart_toStartOf="parent"
+                aapp:layout_constraintTop_toBottomOf="@+id/txtEmail"
+                tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/logarId"
+                android:layout_width="213dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/botao_radius"
+                android:text="@string/logar"
+                android:textColor="@color/textColorPrimary"
+                aapp:layout_constraintBottom_toBottomOf="parent"
+                aapp:layout_constraintEnd_toEndOf="parent"
+                aapp:layout_constraintHorizontal_bias="0.497"
+                aapp:layout_constraintStart_toStartOf="parent"
+                aapp:layout_constraintTop_toBottomOf="@+id/txtSenha"
+                aapp:layout_constraintVertical_bias="0.061" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="270dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                aapp:layout_constraintEnd_toEndOf="parent"
+                aapp:layout_constraintStart_toStartOf="parent"
+                aapp:layout_constraintTop_toBottomOf="@+id/sign_in_button" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="270dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36dp"
+                aapp:layout_constraintEnd_toEndOf="parent"
+                aapp:layout_constraintHorizontal_bias="0.497"
+                aapp:layout_constraintStart_toStartOf="parent"
+                aapp:layout_constraintTop_toBottomOf="@+id/logarId" />
+
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="155dp"
+                android:layout_height="146dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="84dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                aapp:layout_constraintEnd_toEndOf="parent"
+                aapp:layout_constraintStart_toStartOf="parent"
+                aapp:layout_constraintTop_toTopOf="parent"
+                aapp:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/txtProx"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="64dp"
+                android:onClick="telaUsuario"
+                android:text="@string/cadastre_se"
+                android:textColor="@android:color/black"
+                aapp:layout_constraintBottom_toBottomOf="parent"
+                aapp:layout_constraintEnd_toEndOf="parent"
+                aapp:layout_constraintHorizontal_bias="0.497"
+                aapp:layout_constraintStart_toStartOf="parent"
+                aapp:layout_constraintTop_toBottomOf="@+id/sign_in_button"
+                aapp:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints" />
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

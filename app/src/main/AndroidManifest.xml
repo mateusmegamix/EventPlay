@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projeto.eventplay">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="eventplay.aplication.com.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/balao_festa"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.Login"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.teste" />
+        <activity
+            android:name=".activity.Favoritos"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_favoritos"
+            android:parentActivityName=".activity.Principal"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.MapaActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_mapa"
+            android:parentActivityName=".activity.Principal" />
+        <activity
+            android:name=".activity.ComentarioActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_comentario"
+            android:parentActivityName=".activity.Principal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DetalhesProduto"
+            android:configChanges="orientation"
+            android:parentActivityName=".activity.Principal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MeusEventosCriados"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_meus_eventos_criados"
+            android:parentActivityName=".activity.Principal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CadastroEventos"
+            android:configChanges="orientation"
+            android:parentActivityName=".activity.Principal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EventosCadastrados"
+            android:configChanges="orientation"
+            android:parentActivityName=".activity.Principal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Ajuda"
+            android:configChanges="orientation"
+            android:parentActivityName=".activity.Principal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Contato"
+            android:configChanges="orientation"
+            android:parentActivityName=".activity.Principal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Principal"
+            android:configChanges="orientation"
+            android:parentActivityName=".activity.Principal"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activity.CadastroUsuario"
+            android:configChanges="orientation"
+            android:parentActivityName=".activity.Login"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

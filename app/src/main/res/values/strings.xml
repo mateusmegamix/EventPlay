@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Event Play</string>
+    <string name="email">Digite seu email</string>
+    <string name="senha">Digite sua senha</string>
+    <string name="logar">Logar</string>
+    <string name="log">TODO</string>
+
+
+    <string name="nome_completo">Nome Completo</string>
+    <string name="data_de_nascimento">Data de Nascimento</string>
+    <string name="cpf">CPF</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="perf">TODO</string>
+    <string name="e_mail">E-mail</string>
+    <string name="senh">Senha</string>
+    <string name="confirmar_senha">Confirmar Senha</string>
+    <string name="cadastre_se">Já tem conta? Cadastre-se</string>
+
+
+    <string name="conf">Configurações</string>
+    <string name="exit">Sair</string>
+    <string name="maps">Mapa</string>
+    <string name="Pesquisa">Pesquisa</string>
+
+
+    <string name="imagem_evento">TODO</string>
+    <string name="eventos_cadastrados">Eventos Cadastrados</string>
+    <string name="imagemCadastrados">TODO</string>
+    <string name="cadastrar_eventos">Cadastrar Eventos</string>
+    <string name="imagemCadEventos">TODO</string>
+    <string name="data">Data:</string>
+    <string name="tipo">Tipo:</string>
+    <string name="descri_o">Descrição:</string>
+    <string name="tip">Ex: festas, show, rave etc...</string>
+    <string name="hor">Hora:</string>
+    <string name="localiza_o">Localização:</string>
+    <string name="nomeEvent">Digite o nome do seu evento</string>
+    <string name="cadastre_seu_evento">Cadastre seu Evento</string>
+    <string name="criar">Criar</string>
+    <string name="nome">Nome:</string>
+    <string name="foto_de_perfil">Foto de Perfil</string>
+    <string name="localiza">Localização (teste)</string>
+    <string name="descreva_seu_evento">Descreva seu Evento</string>
+
+    <string name="clientIdGoogleSign">685676354239–0k89tf6v31s082esod0f1m7oaqaprhft.apps.googleusercontent.com</string>
+
+    <string name="facebook_app_id">2273171196274332</string>
+
+    <string name="Novo">Novo</string>
+    <string name="Pesquisar">Pesquisar</string>
+    <string name="title_activity_meus_eventos_criados">MeusEventosCriados</string>
+    <string name="fav">favoritos</string>
+
+    <string-array name="categorias">
+        <item>Selecione</item>
+        <item>Bar</item>
+        <item>Choperia</item>
+        <item>Conferência</item>
+        <item>Corrida</item>
+        <item>Festa</item>
+        <item>Festival</item>
+        <item>Hackathon</item>
+        <item>Infantil</item>
+        <item>Musical</item>
+        <item>Palestra</item>
+        <item>Seminário</item>
+        <item>Show ao Vivo</item>
+        <item>Show de Talentos</item>
+        <item>Religioso</item>
+        <item>Torneio</item>
+        <item>Workshop</item>
+    </string-array>
+    <string name="title_activity_mapa">MapaActivity</string>
+    <string name="title_activity_comentario">ComentarioActivity</string>
+    <string name="title_activity_adapter_comentario">AdapterComentario</string>
+    <string name="title_activity_favoritos">Favoritos</string>
+
+</resources>
